@@ -1,0 +1,191 @@
+body {
+  opacity: 1;
+  transition: 2s opacity;
+}
+body.fade {
+  opacity: 0;
+  transition: none;
+}
+
+@keyframes fade-in {
+  from {opacity: 0; transform: scale(.7,.7)}
+  to {opacity: 1;}
+}
+@keyframes slide-right {
+  from {opacity: 0; transform: scale(.7,.7); transform: translateX(-30px)}
+  to {opacity: 1}
+}
+
+.fade-in-element {
+  animation: fade-in 1.4s;
+}
+.hidden {
+  opacity: 0;
+}
+.slide-in-element{
+  animation: slide-right 1.4s;
+}
+.hidden-slide{
+  opacity: 0;
+}
+
+/* Landing Section */
+.landing-parallax {
+  height: 100vh;
+  position: relative;
+}
+.landing-img {
+  height: 100vh;
+}
+.title-logo {
+  width: 40vw;
+}
+.title-logo-wrapper {
+  margin-top: 100px;
+  position: absolute;
+  top: calc(420px - 20vw);
+  left: 28vw;
+}
+.nav-btn {
+  font-weight: 500;
+}
+
+/* Blurb section */
+.headshot-wrapper {
+  margin: 3rem 0px;
+}
+.headshot {
+  border-radius: 50%;
+  border: solid 5px;
+}
+.blurb-lead-wrapper {
+  margin: 6rem 0px;
+}
+.blurb-lead {
+  margin: 0;
+  /* font-weight: lighter; */
+}
+.blurb-wrapper {
+  margin: 1rem 0;
+}
+
+/* Portfolio Section */
+.portfolio-parallax {
+  height: auto;
+}
+.portfolio-title {
+  margin: 2rem auto;
+  font-weight: bold;
+}
+.portfolio-title-wrapper {
+  margin-bottom: 4rem;
+}
+.project-btns {
+  text-align: center;
+  margin: 1rem 1rem;
+  white-space: nowrap;
+}
+.section {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+.project-image img {
+  border-radius: 10px;
+  transform: scale(1,1);
+  filter: sepia(0%);
+  transition: all 0.5s;
+}
+.project-image img:hover {
+  transform: scale(1.05,1.05);
+}
+.tech-used {
+  font-weight: bold;
+  font-size: 20px;
+}
+.devicon-projects {
+  display: inline-block;
+  font-size: 80px;
+  margin: 1rem 1rem;
+}
+
+/* About Me Section */
+.resume-btn {
+  text-align: center;
+  margin: 2rem 0;
+}
+.tabs .indicator {
+  background-color: #000;
+}
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+  background: transparent;
+}
+.devicon-wrapper {
+  text-align: center;
+}
+.devicon {
+  display: inline-block;
+  font-size: 100px;
+  margin: 3rem 1rem;
+}
+.devicon-edu {
+  display: inline-block;
+  font-size: 100px;
+  margin: 3rem 0.1rem;
+}
+.edu-wrapper {
+  margin: 2rem 0;
+}
+.education-title {
+  font-weight: bold;
+}
+.education-grad {
+  font-style: italic;
+  margin: 0;
+}
+.contact-alignment {
+  margin: 5rem auto;
+  text-align: center;
+  white-space: nowrap;
+}
+.contact-alignment h5 {
+  text-align: left;
+}
+.contact-alignment a {
+  color: black;
+}
+
+/* Small Screens */
+@media screen and (max-width: 993px){
+  /* Landing */
+  .title-logo {
+    width: 80vw;
+  }
+  .title-logo-wrapper {
+    top: calc(260px - 20vw);
+    left: 10vw;
+  }
+
+  /* Blurb */
+  .headshot-wrapper img {
+    width: 30rem;
+  }
+  .headshot-wrapper {
+    text-align: center;
+  }
+  .blurb-lead {
+    text-align: center;
+  }
+  .blurb-lead-wrapper{
+    text-align: center;
+    margin: 1rem 0px;
+  }
+  .blurb-lead-wrapper h1 {
+    display: inline;
+    margin: 0.2rem;
+  }
+
+  /* Contact */
+  .contact-alignment {
+    margin: 5rem 5rem;
+  }
+}
