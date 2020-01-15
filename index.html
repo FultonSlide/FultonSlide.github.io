@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon/findmyweatherfavicon.png">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/813cf755af.js" crossorigin="anonymous"></script>
+    <title>FindMyWeatherApp</title>
+</head>
+<body>
+    
+    <div class="container my-5 mx-auto">
+        <h1 class="text-muted text-center my-4">FindMyWeatherApp</h1>
+
+        <ul class="mobile-nav">
+            <li class="mobile-nav-item"><a class="btn btn-secondary" id="Weather">Current Weather</a></li>
+            <li class="mobile-nav-item"><a class="btn btn-secondary" id="Forecast">Forecast</a></li>
+            <li class="mobile-nav-item"><a class="btn btn-secondary" id="Warnings">Warnings & Holidays</a></li>
+        </ul>
+        <form class="change-location my-4 text-center text-muted">
+            <label for="city">Enter a location for weather information</label>
+            <input type="text" name="city" class="form-control p-4">
+            <button type="submit" class="form-submit btn btn-secondary">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+        
+        <div class="content d-none">
+            <!-- Weather Info -->
+            <div class="weather-info">
+                <div class="weather-warnings info-card card shadow-sm rounded">
+                    <div class="icon-warning bg-light mx-auto text-center">
+                        <img src="img/icons/8.svg" alt="warning icon">
+                    </div>
+                    <div class="text-muted text-uppercase text-center details">
+                        <h5 class="my-3">[Weather Warnings]</h5>
+                        <div class="my-3">[Description]</div>
+                        <div class="display-4 my-4">
+                            <span>dets</span>
+                            <span>&deg;C</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="holiday-details info-card card shadow-sm rounded">
+                    <div class="icon-holiday bg-light mx-auto text-center">
+                        <img src="img/icons/7.svg" alt="">
+                    </div>
+                    <div class="text-muted text-uppercase text-center details">
+                        <h5 class="my-3 mx-1">National Holidays this Month</h5>
+                        <div class="holiday-data">
+                            <p class="my-3">[Holidays]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weather Conditions -->
+            <div class="conditions-card card shadow-sm rounded show">
+                <img src="https://via.placeholder.com/400x300" alt="placeholder" class="time-weather card-img-top">
+                <div class="text-uppercase text-center current-time">
+                    <h5 class="my-3">Local Time:</h5>
+                    <div class="local-time"></div>
+                </div>
+                <div class="icon-weather bg-light mx-auto text-center">
+                    <img src="" alt="">
+                </div>
+                <div class="text-muted text-uppercase text-center details-weather">
+                    <h5 class="my-5">City name</h5>
+                    <div class="my-5">Weather conditions</div>
+                    <div class="display-4 my-5">
+                        <span>temp</span>
+                        <span>&deg;C</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weather Forecast -->
+            <div class="weather-forecast">
+                <div class="forecast-card card shadow-sm rounded">
+                    <div class="forecast-icon-one bg-light mx-auto text-center forecast-icon">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text-muted text-uppercase text-center details-forecast-one">
+                        <h5 class="my-3">[Day] [Date]</h5>
+                        <div class="my-3">{Weather Description}</div>
+                        <div class="my-4">
+                            <span>[Min Temp]</span>
+                            <span>[Max Temp]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forecast-card card shadow-sm rounded">
+                    <div class="forecast-icon-two bg-light mx-auto text-center forecast-icon">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text-muted text-uppercase text-center details-forecast-two">
+                        <h5 class="my-3">[Day] [Date]</h5>
+                        <div class="my-3">{Weather Description}</div>
+                        <div class="my-4">
+                            <span>[Min Temp]</span>
+                            <span>[Max Temp]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forecast-card card shadow-sm rounded">
+                    <div class="forecast-icon-three bg-light mx-auto text-center forecast-icon">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text-muted text-uppercase text-center details-forecast-three">
+                        <h5 class="my-3">[Day] [Date]</h5>
+                        <div class="my-3">{Weather Description}</div>
+                        <div class="my-4">
+                            <span>[Min Temp]</span>
+                            <span>[Max Temp]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Holidays JS Class -->
+    <script src="scripts/holidays.js"></script>
+    <!-- Time JS Class -->
+    <script src="scripts/time.js"></script>
+    <!-- Forecast JS Class -->
+    <script src="scripts/forecast.js"></script>
+    <!-- App JS -->
+    <script src="scripts/app.js"></script>
+</body>
+</html>

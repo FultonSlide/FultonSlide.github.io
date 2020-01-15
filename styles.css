@@ -1,0 +1,106 @@
+body {
+    background: #eeedec;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+}
+.container {
+    max-width: 1350px;
+}
+.mobile-nav {
+    display: none;
+}
+.form-submit {
+    display: none;
+}
+.form-control{
+    max-width: 450px;
+    margin: 0 auto;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card {
+    /* background: transparent; */
+    max-width: 400px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.weather-info {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(200px, auto));
+}
+.weather-forecast {
+    display: grid;
+    grid-template-rows: repeat(3, minmax(1px, auto));
+}
+.forecast-card {
+    margin-top: 55px;
+}
+.weather-warnings {
+    margin-bottom: 1rem;
+    margin-top: 55px;
+}
+.holiday-details {
+    margin-top: 55px;
+    height: auto;
+}
+.holiday-data p {
+    margin: 3em 0;
+}
+.icon-weather, .forecast-icon, .icon-warning, .icon-holiday {
+    position: relative;
+    top: -50px;
+    border-radius: 50%; 
+    width: 100px;
+    margin-bottom: -50px;
+}
+.current-time {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.details-weather {
+    margin: auto 0px;
+}
+
+@media screen and (max-width: 966px){
+    .content {
+        display: block;
+    }
+    .change-location label{
+        display: block;
+    }
+    .mobile-nav {
+        margin: auto;
+        padding: 0 !important;
+        text-align: center;
+        display: block;
+    }
+    .mobile-nav-item {
+        display: inline-block;
+        margin: 0.1rem;
+        color: black;
+    }
+    .form-control {
+        display: inline-block;
+    }
+    .form-submit {
+        display: inline-block;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        color: black;
+    }
+    .conditions-card, .weather-info, .weather-forecast {
+        display: none;
+    }
+    .show {
+        display: block;
+        margin: auto;
+    }
+    .show .forecast-card, .show .weather-warnings, .show .holiday-details {
+        margin: 55px auto;
+    }
+}
