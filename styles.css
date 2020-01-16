@@ -143,8 +143,7 @@ body.fade {
   margin: 0;
 }
 .contact-alignment {
-  margin: 5rem auto;
-  text-align: center;
+  margin: 5rem 0;
   white-space: nowrap;
 }
 .contact-alignment h5 {
@@ -152,6 +151,10 @@ body.fade {
 }
 .contact-alignment a {
   color: black;
+}
+.contact-alignment a:hover {
+  color: #26a69a;
+  transition: all 0.5s;
 }
 
 /* Small Screens */
@@ -186,6 +189,6 @@ body.fade {
 
   /* Contact */
   .contact-alignment {
-    margin: 5rem 5rem;
+    margin: 4rem 2rem;
   }
 }
