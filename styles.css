@@ -41,7 +41,6 @@ body.fade {
   width: 40vw;
 }
 .title-logo-wrapper {
-  margin-top: 100px;
   position: absolute;
   top: calc(420px - 20vw);
   left: 28vw;
