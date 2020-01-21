@@ -1,3 +1,4 @@
+/* Global */
 body {
   opacity: 1;
   transition: 2s opacity;
@@ -6,7 +7,17 @@ body.fade {
   opacity: 0;
   transition: none;
 }
+.text-color {
+  color: #70DDFF;
+}
+.btn-color {
+  background-color: #FF7070;
+}
+.icon-color {
+  color: #FF7070;
+}
 
+/* JS animations */
 @keyframes fade-in {
   from {opacity: 0; transform: scale(.7,.7)}
   to {opacity: 1;}
@@ -38,13 +49,20 @@ body.fade {
   height: 100vh;
 }
 .title-logo {
-  width: 40vw;
+  width: 50vw;
 }
 .title-logo-wrapper {
-  margin-top: 100px;
-  position: absolute;
-  top: calc(420px - 20vw);
-  left: 28vw;
+  margin:0 auto;
+  position:absolute;
+  left:25%;
+  top:30%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+.title-lead {
+  margin-top: -80px;
+  font-size: 26px;
+  font-style: italic;
 }
 .nav-btn {
   font-weight: 500;
@@ -153,7 +171,7 @@ body.fade {
   color: black;
 }
 .contact-alignment a:hover {
-  color: #26a69a;
+  color: #FF7070;
   transition: all 0.5s;
 }
 
@@ -161,11 +179,15 @@ body.fade {
 @media screen and (max-width: 993px){
   /* Landing */
   .title-logo {
-    width: 80vw;
+    width: 60vw;
   }
   .title-logo-wrapper {
-    top: calc(260px - 20vw);
-    left: 10vw;
+    left:30%;
+    top:40%;
+  }
+  .title-lead {
+    font-size: 15px;
+    margin-top: -30px;
   }
 
   /* Blurb */
