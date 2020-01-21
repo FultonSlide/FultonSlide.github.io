@@ -8,13 +8,16 @@ body.fade {
   transition: none;
 }
 .text-color {
-  color: #70DDFF;
+  color: rgb(95, 215, 252);
 }
 .btn-color {
   background-color: #FF7070;
 }
 .icon-color {
   color: #FF7070;
+}
+.btn:hover {
+  background-color: rgb(248, 90, 90);
 }
 
 /* JS animations */
