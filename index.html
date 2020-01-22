@@ -82,7 +82,7 @@
         <h1 class="text-color blurb-lead">Will</h1>
       </div>
       <div class="col s12 l4 offset-l1 blurb-wrapper">
-        <p class="flow-text text-color">I'm a developer...</p>
+        <p class="flow-text blurb-title">I'm a developer...</p>
         <p>I am a passionate Front-end Developer who can't stop coding, even in my spare time.</p>
         <p>My main expertise and passion lies in Front-end Development, making user interfaces as beautiful as they are functional, creating layouts that excite users and finding ways of making applications as small and performant as possible are just some of the things that motivate me.</p>
         <p>I also have skills in the backend having developed many Full Stack applications with MySQL and NoSQL databases as well as utilizing many Backend languages to create intuitive and functional backend app logic.</p>
@@ -98,8 +98,31 @@
     <section class="container section scrollspy" id="portfolio">
       <div class="center portfolio-title-wrapper">
         <h1 class="text-flow portfolio-title">Portfolio</h1>
-        <p class="portfolio-title-follow flow-text">Projects</p>
+        <p class="portfolio-title-follow flow-text">Professional Projects</p>
       </div>
+
+      <div class="row project-rows hidden">
+        <div class="col s12 l4">
+          <div class="project-image">
+            <a href="https://biteg.de/" target="_blank"><img src="img/Biteg_Screenshot.png" alt="Biteg" class="responsive-img"></a>
+          </div>
+          <div class="project-btns">
+            <a class="btn btn-color lighten-1" href="https://biteg.de/" target="_blank">View Site</a>
+          </div>
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="text-color"><a href="https://biteg.de/" target="_blank">Biteg</a></h2>
+          <p>Working for the software development agency <span class="bold">Unrealists</span> I helped develop this website for a German government seminar site; <span class="bold">Biteg</span>. On this project I used <span class="bold">PHP Laravel</span>, <span class="bold">JavaScript</span> & <span class="bold">MySQL</span> to create user interfaces, write search logic to search through the over 10,000 entry database, implement a google captcha for input forms to prevent spam & write SQL queries to tie the front and back ends together.</p>
+          <p>As well as this I used <span class="bold">Laravel Voyager</span> to create a backend admin for the people at <span class="bold">Biteg</span> to be able to easily perform BREAD operations on the <span class="bold">MySQL</span> database and add, delete or modify content on the live site by using rich text editors.</p>
+          <p>Due to contractual & privacy reasons I can't provide access to the code I contributed to this site but I have provided links to the live site.</p>
+          <p class="tech-used">Technologies Used:</p>
+          <i class="devicon-php-plain colored devicon-projects"></i>
+          <i class="devicon-laravel-plain-wordmark colored devicon-projects"></i>
+          <i class="devicon-javascript-plain colored devicon-projects"></i>
+          <i class="devicon-mysql-plain-wordmark colored devicon-projects"></i>
+        </div>
+      </div>
+
       <!-- <div class="row project-rows hidden">
         <div class="col s12 l4">
           <div class="project-image">
@@ -117,8 +140,13 @@
           <i class="devicon-react-original-wordmark colored devicon-projects"></i>
         </div>
       </div> -->
+
+      <div class="center portfolio-title-wrapper">
+        <p class="portfolio-title-follow flow-text">Personal Projects</p>
+      </div>
+
       <div class="row project-rows hidden">
-        <div class="col s12 l4">
+        <div class="col s12 l4 push-l7 offset-l1">
           <div class="project-image">
             <a href="https://findmyweather.000webhostapp.com/" target="_blank"><img src="img/FindMyWeatherScreenshot.png" alt="wireframes" class="responsive-img"></a>
           </div>
@@ -127,9 +155,9 @@
             <a class="btn-color btn" href="https://github.com/FultonSlide/FindMyWeatherApp" target="_blank">View Code</a>
           </div>
         </div>
-        <div class="col s12 l6 offset-l1">
-          <h2 class="text-color">FindMyWeather</h2>
-          <p>FindMyWeather is a JavaScript based application that allows users to enter their city into a search bar and are returned the weather details of that city at the current time. The app makes use of several restful API calls to grab data about the users entered city, such as it's weather conditons, weather forecast, weather warnings and all upcoming national holidays.</p>
+        <div class="col s12 l6 pull-l5 right-align offset-l1">
+          <h2 class="text-color"><a href="https://findmyweather.000webhostapp.com/" target="_blank">FindMyWeather</a></h2>
+          <p><span class="bold">FindMyWeather</span> is a <span class="bold">JavaScript</span> based application that allows users to enter their city into a search bar and are returned the weather details of that city at the current time. The app makes use of several <span class="bold">restful API calls</span> to grab data about the users entered city, such as it's weather conditons, weather forecast, weather warnings and all upcoming national holidays.</p>
           <p class="tech-used">Technologies Used:</p>
           <i class="devicon-javascript-plain colored devicon-projects"></i>
           <i class="devicon-bootstrap-plain-wordmark colored devicon-projects"></i>
@@ -137,8 +165,11 @@
           <i class="devicon-css3-plain-wordmark colored devicon-projects"></i>
         </div>
       </div>
+
+      
+
       <div class="row project-rows hidden">
-        <div class="col s12 l4 push-l7 offset-l1">
+        <div class="col s12 l4">
           <div class="project-image">
             <a href="http://quarkproject.000webhostapp.com/index.php" target="_blank"><img src="img/QuarkScreenshot.png" alt="wireframes" class="responsive-img"></a>
           </div>
@@ -147,9 +178,9 @@
             <a class="btn btn-color" href="https://github.com/FultonSlide/Quark" target="_blank">View Code</a>
           </div>
         </div>
-        <div class="col s12 l6 pull-l5 right-align offset-l1">
-          <h2 class="text-color">Quark</h2>
-          <p>I developed this site at University in 2018 where I was tasked with creating a basic social media app utilizing PHP and MySQL. The app allows users to sign up, login, add friends and delete friends. The app has basic CSS styling made from scratch without the help of any CSS frameworks.</p>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="text-color"><a href="http://quarkproject.000webhostapp.com/index.php" target="_blank">Quark</a></h2>
+          <p>I developed this site at University in 2018 where I was tasked with creating a basic social media app utilizing <span class="bold">PHP</span> and <span class="bold">MySQL</span>. The app allows users to sign up, login, add friends and delete friends.</p>
           <p class="tech-used">Technologies Used:</p>
           <i class="devicon-php-plain colored devicon-projects"></i>
           <i class="devicon-html5-plain-wordmark colored devicon-projects"></i>
@@ -157,6 +188,7 @@
           <i class="devicon-mysql-plain-wordmark colored devicon-projects"></i>
         </div>
       </div>
+
     </section>
   </div>
   <!-- About Me -->
@@ -164,7 +196,7 @@
     <div class="row">
       <div class="col s12 l4">
         <h2 class="text-color">About Me...</h2>
-        <p>I graduated from Swinburne University in 2019 with a Bachelors of Robotics Engineering where I found my passion for Software Development. I minored in Web Development and created many Full Stack applications utilizing both Front-end and Backend Technologies</p>
+        <p>I graduated from Swinburne University in 2019 with a Bachelors of Robotics & Mechatronics Engineering where I found my passion for Software Development. I minored in Web Development and created many Full Stack applications utilizing both Front-end and Backend Technologies</p>
         <p>In mid 2019 I started working for a German based Software Engineering Agency called Unrealists, working as a remote Freelance Software Developer I utilized technologies from both front-end and backend technology stacks.</p>
         <p>I am constantly striving to learn more and improve my skills as a Front-end Developer, I have a deep passion for Front-end Development and hope to become a lead Senior Developer on professional projects in the future.</p>
         <div class="resume-btn">
@@ -186,7 +218,7 @@
         <div class="col s12" id="skills">
           <p class="flow-text text-color">SKILLS</p>
           <p>I am proficient in <span class="bold">ES6 Javascript</span>, <span class="bold">HTML</span> & <span class="bold">CSS</span> and consider this the technology stack I am most skilled in. I have created many applications based around these 3 technologies that can be seen on my <a href="https://github.com/FultonSlide" target="_blank">github</a>.</p> 
-          <p>I have experience in <span class="bold">React</span> having worked with the framework in my personal projects. I am learning as much as I can about React and hope to master it someday.</p>
+          <p>I have experience in <span class="bold">React</span> having worked with the framework in my personal projects. I am learning as much as I can about <span class="bold">React</span> and hope to master it someday.</p>
           <p>I am constantly trying to improve, learn more and broaden my horizens by staying up to date with the latest technologies & building personal passion projects in my spare time.</p>
           <div class="devicon-wrapper">
             <i class="devicon-javascript-plain colored devicon"></i>
@@ -198,8 +230,9 @@
         <div class="col s12" id="experience">
           <p class="flow-text text-color">EXPERIENCE</p>
           <p>I am currently a freelance remote Software Developer working from Melbourne, Australia for a Software Development Agency, <span class="bold">Unrealists</span>; who are based in Berlin, Germany.</p>
-          <p>Working with <span class="bold">Unrealists</span> I have worked on a German Government seminar website called <a href="https://biteg.de/" target="_blank">Biteg</a> & built internal tooling for a European Financial Investment Company <a href="https://prestacap.com/en/" target=_blank>Prestcap</a>, creating both front-end and backend systems to a high code quality and in a timely manner.</p>
+          <p>Working with <span class="bold">Unrealists</span> I have worked on a German Government seminar website called <a href="https://biteg.de/" target="_blank">Biteg</a> & built internal tooling for a European Financial Investment Company <a href="https://prestacap.com/en/" target=_blank>Prestacap</a>, creating both front-end and backend systems to a high code quality and in a timely manner.</p>
           <p>On the <a href="https://biteg.de/" target="_blank">Biteg</a> project I used <span class="bold">PHP Laravel</span>, <span class="bold">JavaScript</span> & <span class="bold">MySQL</span> to build out user interfaces, write search logic to search through the over 10,000 entry database, implement a google captcha for input forms to prevent spam & write SQL queries to tie the front and back ends together.</p>
+          <p>As well as this I used <span class="bold">Laravel Voyager</span> to create a backend admin for the people at <span class="bold">Biteg</span> to be able to easily perform BREAD operations on the <span class="bold"></span>MySQL</span> database and add, delete or modify content on the live site by using rich text editors.</p>
           <p>On the <a href="https://prestacap.com/en/" target=_blank>Prestacap</a> project I used <span class="bold">Angular</span>, <span class="bold">TypeScript</span> & <span class="bold">AG-grid</span> on the front-end to create intuitive, responsive and pixel perfect grid interfaces to display financial information. On the Backend I used <span class="bold">Python</span> to write scripts that would scan through bank statement pdf’s and extract relevant information.</p>
           <p>I have a learned a lot in this role and am excited to continue growing as a developer.</p>
           <div class="devicon-wrapper">
@@ -218,14 +251,14 @@
             <p class="education-grad">- Graduated November 2019</p>
           </div>
           <div class="edu-wrapper">
-            <h6 class="education-title">Modern JavaScript Online Course</h6>
-            <h6>Udemy Online Training</h6>
-            <p class="education-grad">- Completed December 2019</p>
-          </div>
-          <div class="edu-wrapper">
             <h6 class="education-title">Associates Degree in Mechanical Engineering</h6>
             <h6>Royal Melbourne Institute of Technology, Melbourne, Victoria</h6>
             <p class="education-grad">- Graduated June 2015</p>
+          </div>
+          <div class="edu-wrapper">
+            <h6 class="education-title">Modern JavaScript Online Course</h6>
+            <h6>Udemy Online Training</h6>
+            <p class="education-grad">- Completed December 2019</p>
           </div>
         </div>
       </div>
@@ -243,7 +276,7 @@
       <div class="col s12 l5">
         <h2 class="text-color">Get In Touch</h2>
         <p>If anything here has caught your interest don't hesitate to contact me via my details.</p>
-        <p>I respond to emails as quick as I can and if you send me a Linkedin message I'll endeavour to get back to you as soon as possible!</p>
+        <p>If you send me an email or a Linkedin message I'll endeavour to get back to you as soon as possible!</p>
       </div>
       <div class="col s12 l5 offset-l2 contact-section">
         <div class="contact-alignment">
