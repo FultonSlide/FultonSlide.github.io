@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="img/logo_transparent_background_favicon.png">
+  <link rel="icon" type="svg" href="img/WQ Logo.png">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <!--Import Google Icon Font-->
@@ -34,9 +34,9 @@
           </a>
           <!-- <div class="hidden-slide"> -->
             <ul class="hide-on-med-and-down">
-              <li><a href="#portfolio" class="black-text text-lighten-1 nav-btn">Portfolio</a></li>
-              <li><a href="#about" class="black-text text-lighten-1 nav-btn">About me</a></li>
-              <li><a href="#contact" class="black-text text-lighten-1 nav-btn">Contact</a></li>
+              <li><a href="#portfolio" class="black-text nav-btn">Portfolio</a></li>
+              <li><a href="#about" class="black-text nav-btn">About me</a></li>
+              <li><a href="#contact" class="black-text nav-btn">Contact</a></li>
             </ul>
           <!-- </div> -->
           <ul class="right hide-on-med-and-down">
@@ -64,7 +64,11 @@
         </div>
       </nav>
       <div class="center title-logo-wrapper hidden">
-        <img src="img/logo_transparent_background.png" alt="William Qoro" class="title-logo">
+        <img src="img/William Qoro Title.svg" alt="William Qoro" class="title-logo">
+        <p class="title-lead">Front-end Developer</p>
+      </div>
+      <div class="scroll-ani">
+        <div class="scroll-ball"></div>
       </div>
     </div>
   </header>
@@ -75,15 +79,15 @@
         <img src="img/headshot.jpg" alt="William Qoro" class="responsive-img headshot">
       </div>
       <div class="col s12 l2 offset-l1 offset-m0 blurb-lead-wrapper">
-        <h1 class="teal-text text-lighten-1 blurb-lead">Hi!</h1>
-        <h1 class="teal-text text-lighten-1 blurb-lead">My</h1>
-        <h1 class="teal-text text-lighten-1 blurb-lead">name's</h1>
-        <h1 class="teal-text text-lighten-1 blurb-lead">Will</h1>
+        <h1 class="text-color blurb-lead">Hi!</h1>
+        <h1 class="text-color blurb-lead">My</h1>
+        <h1 class="text-color blurb-lead">name's</h1>
+        <h1 class="text-color blurb-lead">Will</h1>
       </div>
       <div class="col s12 l4 offset-l1 blurb-wrapper">
-        <p class="flow-text teal-text text-lighten-1">I'm a developer...</p>
-        <p>I am a Front End Developer passionate in everything development from UI/UX to backend & database management.</p>
-        <p>My main expertise and passion lies in Front End Development, making user interfaces as functional and as pixel perfect as can be is what gets me excited.</p>
+        <p class="flow-text blurb-title">I'm a developer...</p>
+        <p>I am a passionate Front-end Developer who can't stop coding, even in my spare time.</p>
+        <p>My main expertise and passion lies in Front-end Development, making user interfaces as beautiful as they are functional, creating layouts that excite users and finding ways of making applications as small and performant as possible are just some of the things that motivate me.</p>
         <p>I also have skills in the backend having developed many Full Stack applications with MySQL and NoSQL databases as well as utilizing many Backend languages to create intuitive and functional backend app logic.</p>
         <p>Scroll down to find out more about me and the projects I have worked on!</p>
       </div>
@@ -97,38 +101,70 @@
     <section class="container section scrollspy" id="portfolio">
       <div class="center portfolio-title-wrapper">
         <h1 class="text-flow portfolio-title">Portfolio</h1>
-        <p class="portfolio-title-follow flow-text">Projects</p>
+        <p class="portfolio-title-follow flow-text">Professional Projects</p>
       </div>
-      <!-- <div class="row project-rows hidden">
-        <div class="col s12 l4">
+
+      <div class="row project-rows hidden">
+        <div class="project-links col s12 l4">
           <div class="project-image">
-            <a href="#"><img src="img/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg" alt="wireframes" class="responsive-img"></a>
+            <a href="https://biteg.de/" target="_blank"><img src="img/Biteg_Screenshot.png" alt="Biteg" class="responsive-img"></a>
           </div>
           <div class="project-btns">
-            <a class="btn teal lighten-1" href="#">View Site</a>
-            <a class="btn teal lighten-1" href="https://github.com/FultonSlide/reactsandboxapp" target="_blank">View Code</a>
+            <a class="btn btn-color lighten-1" href="https://biteg.de/" target="_blank">View Site</a>
           </div>
         </div>
         <div class="col s12 l6 offset-l1">
-          <h2 class="teal-text text-lighten-1">React App</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <h2 class="text-color"><a href="https://biteg.de/" target="_blank">Biteg</a></h2>
+          <p>Working for the software development agency <span class="bold">Unrealists</span> I helped develop this website for a German government seminar site; <span class="bold">Biteg</span>. On this project I used <span class="bold">PHP Laravel</span>, <span class="bold">JavaScript</span> & <span class="bold">MySQL</span> to create user interfaces, write search logic to search through the over 10,000 entry database, implement a google captcha for input forms to prevent spam & write SQL queries to tie the front and back ends together.</p>
+          <p>As well as this I used <span class="bold">Laravel Voyager</span> to create a backend admin for the people at <span class="bold">Biteg</span> to be able to easily perform BREAD operations on the <span class="bold">MySQL</span> database and add, delete or modify content on the live site by using rich text editors.</p>
+          <p>Due to contractual & privacy reasons I can't provide access to the code I contributed to this site but I have provided links to the live site.</p>
+          <p class="tech-used">Technologies Used:</p>
+          <i class="devicon-php-plain colored devicon-projects"></i>
+          <i class="devicon-laravel-plain-wordmark colored devicon-projects"></i>
+          <i class="devicon-javascript-plain colored devicon-projects"></i>
+          <i class="devicon-mysql-plain-wordmark colored devicon-projects"></i>
+        </div>
+      </div>
+
+      <div class="center portfolio-title-wrapper">
+        <p class="portfolio-title-follow flow-text">Personal Projects</p>
+      </div>
+
+      <div class="row project-rows hidden">
+        <div class="project-links col s12 l4 push-l7 offset-l1">
+          <div class="project-image">
+            <a href="https://venture-project-planner.web.app/" target="_blank"><img src="img/Venture-Logo-Card.png" alt="Venture App" class="responsive-img"></a>
+          </div>
+          <div class="project-btns">
+            <a class="btn-color btn" href="https://venture-project-planner.web.app/" target="_blank">View Site</a>
+            <a class="btn-color btn" href="https://github.com/FultonSlide/Venture-Project-Planner-App" target="_blank">View Code</a>
+          </div>
+        </div>
+        <div class="col s12 l6 pull-l5 right-align offset-l1">
+          <h2 class="text-color"><a href="https://venture-project-planner.web.app/" target="_blank">Venture</a></h2>
+          <p><span class="bold">Venture</span> is a project planner app that I built where I used <span class="bold">React</span>, <span class="bold">Redux</span>, <span class="bold">Firebase Auth</span>, <span class="bold">Firebase Cloud Functions</span>, <span class="bold">Firebase Hosting</span> & <span class="bold">Firestore</span> to create an application that allows users to sign up for an account, create planning posts, view other users posts & get real-time notifications of other users signing up and posting projects.</p>
+          <p>I used <span class="bold">React</span> to create all of the components from the Navbar component to the project details component. I then used <span class="bold">Redux</span> as my application state management tool to manage the state of my app from users being logged in or out to managing project detail data that was being pulled from my <span class="bold">Firestore</span> database on the backend.</p>
+          <p>As well as these technologies I leveraged <span class="bold">Firebase Auth</span> to create a secure sign up & login system using email/password, <span class="bold">Firebase Cloud Functions</span> to create a notification system where logged in users are notified of other users signing up for the first time or posting a new project & I utilized <span class="bold">Firebase Hosting</span> to host the final built application.</p>
           <p class="tech-used">Technologies Used:</p>
           <i class="devicon-react-original-wordmark colored devicon-projects"></i>
+          <img src="img/dev-icons/icons8-redux.svg" alt="redux" class="devicon-img">
+          <img src="img/dev-icons/icons8-firebase.svg" alt="firebase/firestore" class="devicon-img">
         </div>
-      </div> -->
+      </div>
+
       <div class="row project-rows hidden">
-        <div class="col s12 l4">
+        <div class="project-links col s12 l4">
           <div class="project-image">
-            <a href="https://findmyweather.000webhostapp.com/" target="_blank"><img src="img/FindMyWeatherScreenshot.png" alt="wireframes" class="responsive-img"></a>
+            <a href="https://findmyweather.000webhostapp.com/" target="_blank"><img src="img/Morrow-Logo-Card.png" alt="Morrow App" class="responsive-img"></a>
           </div>
           <div class="project-btns">
-            <a class="btn teal lighten-1" href="https://findmyweather.000webhostapp.com/" target="_blank">View Site</a>
-            <a class="btn teal lighten-1" href="https://github.com/FultonSlide/FindMyWeatherApp" target="_blank">View Code</a>
+            <a class="btn btn-color" href="https://findmyweather.000webhostapp.com/" target="_blank">View Site</a>
+            <a class="btn btn-color" href="https://github.com/FultonSlide/FindMyWeatherApp" target="_blank">View Code</a>
           </div>
         </div>
         <div class="col s12 l6 offset-l1">
-          <h2 class="teal-text text-lighten-1">FindMyWeather</h2>
-          <p>FindMyWeather is a JavaScript based application that allows users to enter their city into a search bar and are returned the weather details of that city at the current time. The app makes use of several restful API calls to grab data about the users entered city, such as it's weather conditons, weather forecast, weather warnings and all upcoming national holidays.</p>
+          <h2 class="text-color"><a href="https://findmyweather.000webhostapp.com/" target="_blank">Morrow</a></h2>
+          <p><span class="bold">Morrow</span> is a <span class="bold">JavaScript</span> based weather app that allows users to enter a city into a search bar and are returned the weather details of that city at the current time. The app makes use of several <span class="bold">restful API calls</span> to grab data about the users entered city, such as it's weather conditons, weather forecast, weather warnings, upcoming national holidays; then returns that data to the user in a visually appealing & easy to understand UI.</p>
           <p class="tech-used">Technologies Used:</p>
           <i class="devicon-javascript-plain colored devicon-projects"></i>
           <i class="devicon-bootstrap-plain-wordmark colored devicon-projects"></i>
@@ -136,58 +172,60 @@
           <i class="devicon-css3-plain-wordmark colored devicon-projects"></i>
         </div>
       </div>
-      <div class="row project-rows hidden">
-        <div class="col s12 l4 push-l7 offset-l1">
+
+      <!-- <div class="row project-rows hidden">
+        <div class="project-links col s12 l4 push-l7 offset-l1">
           <div class="project-image">
-            <a href="http://quarkproject.000webhostapp.com/index.php" target="_blank"><img src="img/QuarkScreenshot.png" alt="wireframes" class="responsive-img"></a>
+            <a href="http://quarkproject.000webhostapp.com/index.php" target="_blank"><img src="img/Quark-Logo-Card.png" alt="morrow" class="responsive-img"></a>
           </div>
           <div class="project-btns">
-            <a class="btn teal lighten-1" href="http://quarkproject.000webhostapp.com/index.php" target="_blank">View Site</a>
-            <a class="btn teal lighten-1" href="https://github.com/FultonSlide/Quark" target="_blank">View Code</a>
+            <a class="btn-color btn" href="http://quarkproject.000webhostapp.com/index.php" target="_blank">View Site</a>
+            <a class="btn-color btn" href="https://github.com/FultonSlide/Quark" target="_blank">View Code</a>
           </div>
         </div>
         <div class="col s12 l6 pull-l5 right-align offset-l1">
-          <h2 class="teal-text text-lighten-1">Quark</h2>
-          <p>I developed this site at University in 2018 where I was tasked with creating a basic social media app utilizing PHP and MySQL. The app allows users to sign up, login, add friends and delete friends. The app has basic CSS styling made from scratch without the help of any CSS frameworks.</p>
+          <h2 class="text-color"><a href="http://quarkproject.000webhostapp.com/index.php" target="_blank">Quark</a></h2>
+          <p>I developed this site at University in 2018 where I was tasked with creating a basic social media app utilizing <span class="bold">PHP</span> and <span class="bold">MySQL</span>. The app allows users to sign up, login, add friends and delete friends.</p>
+          <p>I used <span class="bold">HTML</span> to structure the content of the app & <span class="bold">CSS</span> to create the layout and general styling. I then utilized <span class="bold">PHP</span> to do most of the heavy lifting from fetching data from the <span class="bold">MySQL</span> database using <span class="bold">SQL</span> queries to implementing the pagination of the friends lists so the list of friends isn't too long for the user to interact with.</p>
           <p class="tech-used">Technologies Used:</p>
           <i class="devicon-php-plain colored devicon-projects"></i>
           <i class="devicon-html5-plain-wordmark colored devicon-projects"></i>
           <i class="devicon-css3-plain-wordmark colored devicon-projects"></i>
           <i class="devicon-mysql-plain-wordmark colored devicon-projects"></i>
         </div>
-      </div>
+      </div> -->
+
     </section>
   </div>
   <!-- About Me -->
   <section class="container section scrollspy" id="about">
     <div class="row">
       <div class="col s12 l4">
-        <h2 class="teal-text text-lighten-1">About Me...</h2>
-        <p>As mentioned above I am a Front End Developer with a passion for working with Front End technologies to make interactive, intuitive and pixel perfect applications.</p>
-        <p>I graduated from Swinburne University in 2019 with a Bachelors of Robotics Engineering where I found my passion for Software Development. I minored in Web Development and created many Full Stack applications utilizing both Front End and Backend Technologies</p>
-        <p>In mid 2019 I started working for a German based Software Engineering Agency called Unrealists, working as a remote Freelance Software Developer working with technologies from both front end and backend technology stacks.</p>
-        <p>I am constantly striving to learn more and improve my skills as a Front End Developer, I have a deep passion and hunger to become the best developer that I can.</p>
+        <h2 class="text-color">About Me...</h2>
+        <p>I graduated from Swinburne University in 2019 with a Bachelors of Robotics & Mechatronics Engineering where I found my passion for Software Development. I minored in Web Development and created many Full Stack applications utilizing both Front-end and Backend Technologies</p>
+        <p>In mid 2019 I started working for a German based Software Engineering Agency called Unrealists, working as a remote Freelance Software Developer I utilized technologies from both front-end and backend technology stacks.</p>
+        <p>I am constantly striving to learn more and improve my skills as a Front-end Developer, I have a deep passion for Front-end Development and hope to become a lead Senior Developer on professional projects in the future.</p>
         <div class="resume-btn">
-          <a href="downloads/William Qoro 2020 Professional Resume.pdf" class="btn teal lighten-1" download>Download Resume</a>
+          <a href="downloads/William Qoro CV.pdf" class="btn btn-color" download>Download Resume</a>
         </div>
       </div>
       <div class="col s12 l6 offset-l2">
         <ul class="tabs">
           <li class="tab col s4">
-            <a href="#skills" class="teal-text text-lighten-1">Skills</a>
+            <a href="#skills" class="text-color">Skills</a>
           </li>
           <li class="tab col s4">
-            <a href="#experience" class="teal-text text-lighten-1">Experience</a>
+            <a href="#experience" class="text-color">Experience</a>
           </li>
           <li class="tab col s4">
-            <a href="#education" class="teal-text text-lighten-1">Education</a>
+            <a href="#education" class="text-color">Education</a>
           </li>
         </ul>
         <div class="col s12" id="skills">
-          <p class="flow-text teal-text text-lighten-1">SKILLS</p>
-          <p>I am proficient in ES6 Javascript, HTML & CSS and consider this the technology stack I am most skilled in. I have created many applications based around these 3 technologies that can be seen in my portfolio section.</p> 
-          <p>I have experience in React having worked with the framework in my personal projects. I am learning as much as I can about React and hope to master it someday.</p>
-          <p>I am constantly trying to improve, learn more and broaden my horizens by staying up to date with the latest technologies and improve my current skills.</p>
+          <p class="flow-text text-color">SKILLS</p>
+          <p>I am proficient in <span class="bold">ES6 Javascript</span>, <span class="bold">HTML</span> & <span class="bold">CSS</span> and consider this the technology stack I am most skilled in. I have created many applications based around these 3 technologies that can be seen on my <a href="https://github.com/FultonSlide" target="_blank">github</a>.</p> 
+          <p>I have experience in <span class="bold">React</span> having worked with the framework in my personal projects. I am learning as much as I can about <span class="bold">React</span> and hope to master it someday.</p>
+          <p>I am constantly trying to improve, learn more and broaden my horizens by staying up to date with the latest technologies & building personal passion projects in my spare time.</p>
           <div class="devicon-wrapper">
             <i class="devicon-javascript-plain colored devicon"></i>
             <i class="devicon-html5-plain-wordmark colored devicon"></i>
@@ -196,10 +234,13 @@
           </div>
         </div>
         <div class="col s12" id="experience">
-          <p class="flow-text teal-text text-lighten-1">EXPERIENCE</p>
-          <p>I have worked for the past 6 months as a freelance Software Developer working for a Software Development Agency in Berlin, Germany remotely from Melbourne, Australia.</p>
-          <p>I've worked on multiple projects, from government websites to financial technology applications, creating both frontend and backend systems to a high code quality in a timely manner.</p>
-          <p>So far I have worked with technologies such as PHP Laravel, Angular, TypeScript, Javascript, CSS & Python in this role.</p>
+          <p class="flow-text text-color">EXPERIENCE</p>
+          <p>I am currently a freelance remote Software Developer working from Melbourne, Australia for a Software Development Agency, <span class="bold">Unrealists</span>; who are based in Berlin, Germany.</p>
+          <p>Working with <span class="bold">Unrealists</span> I have worked on a German Government seminar website called <a href="https://biteg.de/" target="_blank">Biteg</a> & built internal tooling for a European Financial Investment Company <a href="https://prestacap.com/en/" target=_blank>Prestacap</a>, creating both front-end and backend systems to a high code quality and in a timely manner.</p>
+          <p>On the <a href="https://biteg.de/" target="_blank">Biteg</a> project I used <span class="bold">PHP Laravel</span>, <span class="bold">JavaScript</span> & <span class="bold">MySQL</span> to build out user interfaces, write search logic to search through the over 10,000 entry database, implement a google captcha for input forms to prevent spam & write SQL queries to tie the front and back ends together.</p>
+          <p>As well as this I used <span class="bold">Laravel Voyager</span> to create a backend admin for the people at <span class="bold">Biteg</span> to be able to easily perform BREAD operations on the <span class="bold"></span>MySQL</span> database and add, delete or modify content on the live site by using rich text editors.</p>
+          <p>On the <a href="https://prestacap.com/en/" target=_blank>Prestacap</a> project I used <span class="bold">Angular</span>, <span class="bold">TypeScript</span> & <span class="bold">AG-grid</span> on the front-end to create intuitive, responsive and pixel perfect grid interfaces to display financial information. On the Backend I used <span class="bold">Python</span> to write scripts that would scan through bank statement pdf’s and extract relevant information.</p>
+          <p>I have a learned a lot in this role and am excited to continue growing as a developer.</p>
           <div class="devicon-wrapper">
             <i class="devicon-php-plain colored devicon-edu"></i>
             <i class="devicon-laravel-plain-wordmark colored devicon-edu"></i>
@@ -209,7 +250,7 @@
           </div>
         </div>
         <div class="col s12" id="education">
-          <p class="flow-text teal-text text-lighten-1">EDUCATION</p>
+          <p class="flow-text text-color">EDUCATION</p>
           <div class="edu-wrapper">
             <h6 class="education-title">Bachelors of Robotics & Mechatronics Engineering</h6>
             <h6>Swinburne University of Technology, Hawthorn, Victoria</h6>
@@ -219,6 +260,11 @@
             <h6 class="education-title">Associates Degree in Mechanical Engineering</h6>
             <h6>Royal Melbourne Institute of Technology, Melbourne, Victoria</h6>
             <p class="education-grad">- Graduated June 2015</p>
+          </div>
+          <div class="edu-wrapper">
+            <h6 class="education-title">Modern JavaScript Online Course</h6>
+            <h6>Udemy Online Training</h6>
+            <p class="education-grad">- Completed December 2019</p>
           </div>
         </div>
       </div>
@@ -234,17 +280,17 @@
   <section class="section container scrollspy" id="contact">
     <div class="row">
       <div class="col s12 l5">
-        <h2 class="teal-text text-lighten-1">Get In Touch</h2>
+        <h2 class="text-color">Get In Touch</h2>
         <p>If anything here has caught your interest don't hesitate to contact me via my details.</p>
-        <p>I respond to emails as quick as I can and if you send me a Linkedin message I'll endeavour to get back to you as soon as possible!</p>
+        <p>If you send me an email or a Linkedin message I'll endeavour to get back to you as soon as possible!</p>
       </div>
       <div class="col s12 l5 offset-l2 contact-section">
         <div class="contact-alignment">
-          <i class="material-icons teal-text text-lighten-1 left">email</i>
+          <i class="material-icons icon-color left">email</i>
           <h5><a href="mailto:WilliamQoro@gmail.com?Subject=William%20Qoro%20Portfolio%20Enquiry" target="_top">WilliamQoro@gmail.com</a></h5>
         </div>
         <div class="contact-alignment">
-          <i class="material-icons teal-text text-lighten-1 left">mode_comment</i>
+          <i class="material-icons icon-color left">mode_comment</i>
           <h5><a href="https://www.linkedin.com/in/william-qoro-243925176/" target="_blank">Linkedin</a></h5>
         </div>
       </div>

@@ -1,3 +1,4 @@
+/* Global */
 body {
   opacity: 1;
   transition: 2s opacity;
@@ -6,7 +7,29 @@ body.fade {
   opacity: 0;
   transition: none;
 }
+.text-color {
+  color: rgb(95, 215, 252);
+}
+.btn-color {
+  background-color: #FF7070;
+}
+.icon-color {
+  color: #FF7070;
+}
+.btn:hover {
+  background-color: rgb(248, 90, 90);
+}
+.btn:focus {
+  background-color: rgb(248, 90, 90);
+}
+.bold {
+  font-weight: bold;
+}
+a {
+  color: rgb(95, 215, 252);
+}
 
+/* Animations */
 @keyframes fade-in {
   from {opacity: 0; transform: scale(.7,.7)}
   to {opacity: 1;}
@@ -15,6 +38,44 @@ body.fade {
   from {opacity: 0; transform: scale(.7,.7); transform: translateX(-30px)}
   to {opacity: 1}
 }
+@keyframes scroll-animation {
+  0% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(8px);
+  }
+  40% {
+    transform: translateY(12px);
+  }
+  50% {
+    transform: translateY(14px);
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(16px);
+    opacity: 0.8;
+  }
+  70% {
+    transform: translateY(17px);
+    opacity: 0.5;
+  }
+  80% {
+    transform: translateY(18px);
+    opacity: 0.3;
+  }
+  90% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
 
 .fade-in-element {
   animation: fade-in 1.4s;
@@ -38,15 +99,42 @@ body.fade {
   height: 100vh;
 }
 .title-logo {
-  width: 40vw;
+  width: 50vw;
 }
 .title-logo-wrapper {
+  margin: 0 auto;
   position: absolute;
-  top: calc(420px - 20vw);
-  left: 28vw;
+  left: 24vw;
+  top: 20vh;
+}
+.title-lead {
+  margin-top: -80px;
+  font-size: 26px;
+  font-style: italic;
 }
 .nav-btn {
   font-weight: 500;
+}
+
+.scroll-ani {
+  position: absolute;
+  display: block;
+  top: 85vh;
+  left: 49vw;
+  height: 35px;
+  width: 20px;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.scroll-ball {
+  margin: 0 auto;
+  background-color: black;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  animation: scroll-animation 2.5s linear infinite;
+  opacity: 0;
 }
 
 /* Blurb section */
@@ -59,6 +147,9 @@ body.fade {
 }
 .blurb-lead-wrapper {
   margin: 6rem 0px;
+}
+.blurb-title {
+  color: #FF7070;
 }
 .blurb-lead {
   margin: 0;
@@ -79,6 +170,17 @@ body.fade {
 .portfolio-title-wrapper {
   margin-bottom: 4rem;
 }
+.portfolio-title-follow {
+  font-weight: bolder;
+  color: #FF7070;
+}
+.project-links {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.project-rows {
+  margin: 5rem 0;
+}
 .project-btns {
   text-align: center;
   margin: 1rem 1rem;
@@ -91,7 +193,6 @@ body.fade {
 .project-image img {
   border-radius: 10px;
   transform: scale(1,1);
-  filter: sepia(0%);
   transition: all 0.5s;
 }
 .project-image img:hover {
@@ -105,6 +206,11 @@ body.fade {
   display: inline-block;
   font-size: 80px;
   margin: 1rem 1rem;
+}
+.devicon-img {
+  display: inline-block;
+  width: 70px;
+  margin: 0.5rem;
 }
 
 /* About Me Section */
@@ -152,7 +258,7 @@ body.fade {
   color: black;
 }
 .contact-alignment a:hover {
-  color: #26a69a;
+  color: #FF7070;
   transition: all 0.5s;
 }
 
@@ -160,11 +266,21 @@ body.fade {
 @media screen and (max-width: 993px){
   /* Landing */
   .title-logo {
-    width: 80vw;
+    width: 70vw;
   }
   .title-logo-wrapper {
-    top: calc(260px - 20vw);
-    left: 10vw;
+    left: 14vw;
+    top: 30vh;
+  }
+  .title-lead {
+    font-size: 15px;
+    margin-top: -30px;
+  }
+
+  /* Portfolio */
+  .project-links {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   /* Blurb */
