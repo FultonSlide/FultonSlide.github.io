@@ -13,7 +13,7 @@ const checkPositionFade = () => {
         let element = elements[i];
         let positionFromTop = elements[i].getBoundingClientRect().top;
 
-        if(positionFromTop - windowHeight <= 0){
+        if(positionFromTop - windowHeight <= 100){
             element.classList.add('fade-in-element');
             element.classList.remove('hidden');
         } else {
